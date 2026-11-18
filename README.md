@@ -1,6 +1,5 @@
 # data-analytics-portfolio
 
-Final projects for the Nexvia data analytics track.
 
 - `DA-02-customer-360-attribution`: GA4 web data and a simulated CRM combined into a customer view, with four attribution models and channel ROI. dbt, BigQuery, SQL, Tableau.
 - `DA-03-retail-supply-chain-control-tower`: hourly inventory, delivery and supplier monitoring with anomaly alerts and a demand forecast. PostgreSQL, Airflow, Python, Prophet, Superset, Docker.

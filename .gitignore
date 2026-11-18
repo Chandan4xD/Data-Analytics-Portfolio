@@ -1,0 +1,16 @@
+target/
+logs/
+dbt_packages/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.key
+profiles.yml
+DA-03-retail-supply-chain-control-tower/data/*.csv
+exports/
+node_modules/
+.next/
+.DS_Store

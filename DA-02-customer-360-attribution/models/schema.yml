@@ -1,0 +1,33 @@
+version: 2
+models:
+  - name: sessions
+    columns:
+      - name: session_key
+        tests: [unique, not_null]
+  - name: orders
+    columns:
+      - name: order_key
+        tests: [unique, not_null]
+      - name: revenue_usd
+        tests: [not_null]
+  - name: identity_map
+    columns:
+      - name: user_pseudo_id
+        tests: [unique, not_null]
+  - name: synthetic_crm_customers
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+  - name: customer_profile
+    columns:
+      - name: customer_key
+        tests: [unique, not_null]
+  - name: mart_rfm
+    columns:
+      - name: customer_key
+        tests: [unique, not_null]
+      - name: segment
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Champions', 'Loyal', 'Recent', 'At Risk', 'Needs Attention', 'Lost']
